@@ -1,0 +1,33 @@
+/* Estilos Generales Básicos */
+* {
+    /* Declaro valores generales para quitar los de Default */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: white;
+}
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1.5px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Desarrollo Mobile First para 390 x 844 pixeles */
+
+@media screen and (min-width: 660px) { 
+}
+
+@media screen and (min-width: 844px) { 
+}
+
+@media screen and (min-width: 1024px) {
+}
