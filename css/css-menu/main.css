@@ -1,0 +1,23 @@
+
+
+h2 {
+    color: #37488A;
+}
+h3 {
+    color: #F2803C;
+}
+h4 {
+    color: #767171;
+}
+
+ul li::marker {
+    content: '֍   ';
+}
+
+/* Desarrollo Mobile First para 390 x 844 pixeles */
+@media screen and (min-width: 660px) { 
+}
+@media screen and (min-width: 844px) { 
+}
+@media screen and (min-width: 1024px) {
+}
