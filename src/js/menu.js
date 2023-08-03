@@ -1,23 +1,28 @@
-const btnMenu = document.querySelector('#btnMenu');
-const menu = document.querySelector('#menu');
-btnMenu.addEventListener('click', function() {
-    menu.classList.toggle('mostrar');
+const btnMenu = document.querySelector("#btnMenu");
+const menu = document.querySelector("#menu");
+
+btnMenu.addEventListener("click", function() {
+    menu.classList.toggle("mostrar");
 });
 
-const subMenuBtn = document.querySelectorAll('.submenu__btn');
-for(let i=0; i<subMenuBtn.length; i++) {
-    subMenuBtn[i].addEventListener('click', function() {
-        if(window.innerWidth < 1024) {
-            const header__submenu = this.nextElementSibling;
-            const height = header__submenu.scrollHeight;
+const subMenuBtn = document.querySelectorAll(".submenu-btn");
 
-            if(header__submenu.classList.contains('desplegar')){
-                header__submenu.classList.remove('desplegar');
-                header__submenu.removeAttribute('style');
+for(let i=0; i<subMenuBtn.length; i++) {
+    subMenuBtn[i].addEventListener("click", function() {
+
+        if(window.innerWidth < 1024) {
+            const subMenu = this.nextElementSibling;
+            const height = subMenu.scrollHeight;
+
+            if(subMenu.classList.contains('desplegar')){
+                subMenu.classList.remove('desplegar');
+                subMenu.removeAttribute('style');
             } else {
-            header__submenu.classList.add('desplegar');
-            header__submenu.style.height = height + 'px';
+                subMenu.classList.add('desplegar');
+                subMenu.style.height = height + 'px';
             }
+
         }
+
     });
 }

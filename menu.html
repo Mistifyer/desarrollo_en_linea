@@ -12,7 +12,6 @@
         <title>Menu desplegable JS</title>
 
         <link rel="shortcut icon" type="image/png" href="./public/images/favicon.png"/>
-        <script src="src/js/menu.js"></script>
         
         <link href="https//cdnjs.cloudflare.com/ajax/libs/font-awesom/5.15.2/css/all.min.css" rel="stylesheet"> 
         
@@ -28,24 +27,30 @@
         <!-- Sección HEADER -->
         <header class="header container">
 
-            <span class="nav__bar" id="btnMenu"><i class="icon-menu"></i> Menú</span>
+            <span class="nav-bar" id="btnMenu"><i class="icon-menu"></i> Menú</span>
 
-            <nav class="header__nav">
-                <ul class="header__menu" id="menu">
-                    <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <nav class="main_nav">
+                <ul class="menu" id="menu">
+
+                    <li class="menu__item"><a href="#" class="menu__link">House</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Quienes somos</a></li>
-                    <li class="menu__item container__submenu">
-                        <a href="#" class="menu__link submenu__btn">Productos y Servicios<i class="icon-down-open-big"></i></a></li>
+                    
+                    <li class="menu__item container-submenu">
 
-                        <ul class="header__submenu">
+                        <a href="#" class="menu__link submenu-btn">Productos y Servicios<i class="icon-down-open-big"></i></a>
+
+                        <ul class="submenu">
                             <li class="menu__item"><a href="#" class="menu__link">Cámaras de Seguridad</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Energías Sustentables</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Recorridos Virtuales</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Desarrollo Web</a></li>
                         </ul>
 
+                    </li>
                     <li class="menu__item"><a href="#" class="menu__link">Contactanos</a></li>
+
                 </ul>
+
             </nav>
             
         </header>
