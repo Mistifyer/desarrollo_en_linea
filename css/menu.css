@@ -17,15 +17,19 @@
 .header__menu {
     background: cadetblue;
     width: 100%;
-    /* margin-left: -100%; */
+    margin-left: -100%;
 }
 
 .menu__link {
     display: block;
     padding: 20px;
-    color: black;
+    color: white;
     font-size: 1.2em;
     text-decoration: none;
+}
+
+.menu__link:hover {
+    background: #444;
 }
 
 .header__submenu {
@@ -34,8 +38,37 @@
     transition: all 0.3s;
 }
 
+.header__submenu:hover {
+    background: #222;
+}
+
 .header__submenu .menu__link {
     background: gray;
     padding-left: 50px;
 }
 
+@media (min-width:1024px) {
+    .nav__bar {
+        display: none;
+    }
+    .header__menu {
+        margin-left: 0;
+        display: flex;
+    }
+    .container__submenu {
+        position: relative;
+    }
+    .header__submenu {
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container__submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
