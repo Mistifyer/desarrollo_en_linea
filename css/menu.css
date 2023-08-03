@@ -17,13 +17,13 @@
 .header__menu {
     background: cadetblue;
     width: 100%;
-    margin-left: -100%;
+    /* margin-left: -100%; */
 }
 
 .menu__link {
     display: block;
     padding: 20px;
-    color: white;
+    color: black;
     font-size: 1.2em;
     text-decoration: none;
 }
@@ -35,7 +35,7 @@
 }
 
 .header__submenu .menu__link {
-    background: #333;
+    background: gray;
     padding-left: 50px;
 }
 
