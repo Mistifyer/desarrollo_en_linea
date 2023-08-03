@@ -1,4 +1,26 @@
 /* Estilos Generales Básicos */
+
+/* Declaración de los estílos para el MENÚ */
+@import url(menu.css);
+
+/* Declaración de Archivo de estilos Fontello */
+@import url(fontello.css);
+@import url(icons_fontello.css);
+
+/* Declaración de Archivos de estilos de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Open+Sans&display=swap');
+
+/* 
+Texto Normal:
+font-family: 'Open Sans', sans-serif;
+
+Texto para Títulos:
+font-family: 'Anton', sans-serif;
+
+Texto para Artículos
+font-family: 'Montserrat', sans-serif;
+*/
+
 * {
     /* Declaro valores generales para quitar los de Default */
     padding: 0;
@@ -8,6 +30,7 @@
 }
 body {
     background-color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 .container {
     max-width: 1024px;
@@ -15,6 +38,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1.5px;
+    font-family: 'Anton', sans-serif;
 }
 img {
     display: block;

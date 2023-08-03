@@ -4,8 +4,6 @@
 @import url(main.css);
 @import url(footer.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
 /* Desarrollo Mobile First para 390 x 844 pixeles */
 @media screen and (min-width: 660px) { 
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
     <!-- Sección HEAD -->
     <head>
        
@@ -15,8 +16,9 @@
         
         <link href="https//cdnjs.cloudflare.com/ajax/libs/font-awesom/5.15.2/css/all.min.css" rel="stylesheet"> 
         
+        <!-- Declaración de archivos principales de estilos -->
+        <!-- Los archivos secundarios de estilos están declarados en el archivo styles.css de cada página web -->
         <link href="css/general_styles.css" rel="stylesheet"> 
-        <link href="css/css-menu/styles.css" rel="stylesheet"> 
         
     </head>
 
@@ -25,9 +27,26 @@
 
         <!-- Sección HEADER -->
         <header class="header container">
-            
-            span.nav-bar
-            
+
+            <span class="nav__bar" id="btnMenu"><i class="icon-menu"></i> Menú</span>
+
+            <nav class="header__nav">
+                <ul class="header__menu" id="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Quienes somos</a></li>
+                    <li class="menu__item container__submenu">
+                        <a href="#" class="menu__link submenu__btn">Productos y Servicios<i class="icon-down-open-big"></i></a></li>
+
+                        <ul class="header__submenu">
+                            <li class="menu__item"><a href="#" class="menu__link">Cámaras de Seguridad</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Energías Sustentables</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Recorridos Virtuales</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Desarrollo Web</a></li>
+                        </ul>
+
+                    <li class="menu__item"><a href="#" class="menu__link">Contactanos</a></li>
+                </ul>
+            </nav>
             
         </header>
 
@@ -40,6 +59,8 @@
         <footer class="footer container">
 
         </footer>
+
+        <script src="src/js/menu.js"></script>
 
     </body>
 

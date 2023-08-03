@@ -11,7 +11,7 @@ h4 {
 }
 
 ul li::marker {
-    content: '֍   ';
+    content: '';
 }
 
 /* Desarrollo Mobile First para 390 x 844 pixeles */
