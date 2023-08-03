@@ -1,6 +1,6 @@
 const btnMenu = document.querySelector('#btnMenu');
 const menu = document.querySelector(#menu);
-btnMenu.addEventListener('clic', function() {
+btnMenu.addEventListener('click', function() {
     menu.classList.toggle('mostrar');
 });
 
